@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+bin/opmbuild
+dist.ini
+lib/OTRS/OPM/Maker.pm
+lib/OTRS/OPM/Maker/Command/build.pm
+lib/OTRS/OPM/Maker/Command/dbtest.pm
+lib/OTRS/OPM/Maker/Command/dependencies.pm
+lib/OTRS/OPM/Maker/Command/filetest.pm
+lib/OTRS/OPM/Maker/Command/remote_install.pm
+lib/OTRS/OPM/Maker/Command/sopmtest.pm
