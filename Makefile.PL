@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     "Sys::Hostname" => 0,
     "XML::LibXML" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => ""
   }
