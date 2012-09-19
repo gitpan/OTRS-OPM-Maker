@@ -49,7 +49,7 @@ OTRS::OPM::Maker::Command::remote_install - install OTRS packages on a remote OT
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 

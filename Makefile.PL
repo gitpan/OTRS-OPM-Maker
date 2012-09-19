@@ -28,9 +28,10 @@ my %WriteMakefileArgs = (
     "MIME::Base64" => 0,
     "Path::Class" => 0,
     "Sys::Hostname" => 0,
-    "XML::LibXML" => 0
+    "XML::LibXML" => 0,
+    "XML::LibXML::PrettyPrint" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => ""
   }

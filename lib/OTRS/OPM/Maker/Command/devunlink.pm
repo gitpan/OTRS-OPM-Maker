@@ -87,7 +87,7 @@ OTRS::OPM::Maker::Command::devunlink - unlink the package files into you local O
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
