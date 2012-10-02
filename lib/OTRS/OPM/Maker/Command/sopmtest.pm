@@ -67,7 +67,7 @@ OTRS::OPM::Maker::Command::sopmtest - Check if sopm is valid
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

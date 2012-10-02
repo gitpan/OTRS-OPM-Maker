@@ -84,7 +84,7 @@ OTRS::OPM::Maker::Command::filetest - check if filelist in .sopm includes the fi
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
