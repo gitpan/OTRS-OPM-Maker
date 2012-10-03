@@ -99,7 +99,7 @@ OTRS::OPM::Maker::Command::build - Build OTRS packages
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 AUTHOR
 

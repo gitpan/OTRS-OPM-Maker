@@ -23,6 +23,7 @@ my %WriteMakefileArgs = (
   "NAME" => "OTRS::OPM::Maker",
   "PREREQ_PM" => {
     "App::Cmd" => 0,
+    "File::Basename" => 0,
     "File::Find::Rule" => 0,
     "Getopt::Long" => 0,
     "MIME::Base64" => 0,
@@ -31,7 +32,7 @@ my %WriteMakefileArgs = (
     "XML::LibXML" => 0,
     "XML::LibXML::PrettyPrint" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => ""
   }

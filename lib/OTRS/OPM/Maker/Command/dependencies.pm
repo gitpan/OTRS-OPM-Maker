@@ -66,7 +66,7 @@ OTRS::OPM::Maker::Command::dependencies - List dependencies of OTRS packages
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 AUTHOR
 

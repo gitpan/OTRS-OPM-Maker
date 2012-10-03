@@ -14,6 +14,7 @@ meta-spec:
 name: OTRS-OPM-Maker
 requires:
   App::Cmd: 0
+  File::Basename: 0
   File::Find::Rule: 0
   Getopt::Long: 0
   MIME::Base64: 0
@@ -21,4 +22,4 @@ requires:
   Sys::Hostname: 0
   XML::LibXML: 0
   XML::LibXML::PrettyPrint: 0
-version: 0.04
+version: 0.05
