@@ -12,6 +12,8 @@ use XML::LibXML;
 
 use OTRS::OPM::Maker -command;
 
+our $VERSION = 0.07;
+
 sub abstract {
     return "build package files for OTRS";
 }
@@ -69,7 +71,7 @@ sub execute {
         $file->appendText( $base64 );
     }
     
-    my $build_date = XML::LibXML::Element->new( 'BuildHost' );
+    my $build_date = XML::LibXML::Element->new( 'BuildDate' );
     $build_date->appendText( $timestamp );
     
     my $build_host = XML::LibXML::Element->new( 'BuildHost' );
@@ -91,6 +93,7 @@ sub execute {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -99,7 +102,7 @@ OTRS::OPM::Maker::Command::build - Build OTRS packages
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 AUTHOR
 
@@ -114,4 +117,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

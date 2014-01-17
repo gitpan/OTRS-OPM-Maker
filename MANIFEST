@@ -10,9 +10,11 @@ lib/OTRS/OPM/Maker.pm
 lib/OTRS/OPM/Maker/Command/build.pm
 lib/OTRS/OPM/Maker/Command/dbtest.pm
 lib/OTRS/OPM/Maker/Command/dependencies.pm
-lib/OTRS/OPM/Maker/Command/devlink.pm
-lib/OTRS/OPM/Maker/Command/devunlink.pm
 lib/OTRS/OPM/Maker/Command/filetest.pm
 lib/OTRS/OPM/Maker/Command/index.pm
 lib/OTRS/OPM/Maker/Command/remote_install.pm
 lib/OTRS/OPM/Maker/Command/sopmtest.pm
+t/01_sopmtest_valid.t
+t/valid/TestSMTP/Kernel/Config/Files/TestSMTP.xml
+t/valid/TestSMTP/Kernel/System/Email.pm
+t/valid/TestSMTP/TestSMTP.sopm

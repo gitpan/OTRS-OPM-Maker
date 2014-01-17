@@ -11,6 +11,8 @@ use XML::LibXML;
 
 use OTRS::OPM::Maker -command;
 
+our $VERSION = 0.07;
+
 sub abstract {
     return "Check if filelist in .sopm includes the files on your disk";
 }
@@ -39,9 +41,11 @@ sub execute {
     my $sopm_path = Path::Class::File->new( $file );
     my $path      = $sopm_path->dir;
     
-    my $path_str    = $path->stringify;
-    
-    my @files_in_fs = File::Find::Rule->file->in( $path_str );
+    my $path_str     = $path->stringify;
+    my $ignore_files = File::Find::Rule->file->name(".*");    
+    my @files_in_fs  = File::Find::Rule->file
+        ->not( $ignore_files )
+        ->in ( $path_str );
     
     my %fs = map{ $_ =~ s{$path_str/?}{}; $_ => 1 }
         grep{ $_ !~ /\.git|CVS|svn/ }@files_in_fs;
@@ -76,6 +80,7 @@ sub execute {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -84,7 +89,7 @@ OTRS::OPM::Maker::Command::filetest - check if filelist in .sopm includes the fi
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 AUTHOR
 
@@ -99,4 +104,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

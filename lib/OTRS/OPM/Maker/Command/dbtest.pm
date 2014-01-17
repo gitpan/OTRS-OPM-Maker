@@ -7,9 +7,12 @@ use warnings;
 
 use OTRS::OPM::Maker -command;
 
+our $VERSION = 0.07;
+
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -18,7 +21,7 @@ OTRS::OPM::Maker::Command::dbtest - Test db definitions in .sopm files
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 AUTHOR
 
@@ -33,4 +36,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

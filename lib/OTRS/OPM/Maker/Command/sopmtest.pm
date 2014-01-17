@@ -10,6 +10,8 @@ use XML::LibXML;
 
 use OTRS::OPM::Maker -command;
 
+our $VERSION = 0.07;
+
 sub abstract {
     return "check .sopm if it is valid";
 }
@@ -52,12 +54,10 @@ sub execute {
         return;
     };
     
-    return;
+    return 1;
 }
 
 1;
-
-
 
 =pod
 
@@ -67,7 +67,7 @@ OTRS::OPM::Maker::Command::sopmtest - Check if sopm is valid
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 AUTHOR
 
@@ -82,7 +82,6 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
 
 __DATA__
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -418,6 +417,10 @@ __DATA__
                     <xs:attribute name="Default" use="optional" type="xs:anySimpleType"/>
                     <xs:attribute name="NameOld" use="optional" type="xs:anySimpleType"/>
                     <xs:attribute name="NameNew" use="optional" type="xs:anySimpleType"/>
+                    <xs:attribute name="AutoIncrement" use="optional" type="xs:anySimpleType"/>
+                    <xs:attribute name="Required" use="optional" type="xs:anySimpleType"/>
+                    <xs:attribute name="Size" use="optional" type="xs:anySimpleType"/>
+                    <xs:attribute name="PrimaryKey" use="optional" type="xs:anySimpleType"/>
                 </xs:extension>
             </xs:simpleContent>
         </xs:complexType>

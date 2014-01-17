@@ -1,15 +1,19 @@
 package OTRS::OPM::Maker;
 
+use strict;
+use warnings;
+
 use App::Cmd::Setup -app;
 
 # ABSTRACT: Module/App to build and test OTRS packages
 
-our $VERSION = 0.05;
+our $VERSION = 0.07;
 
 
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -18,7 +22,7 @@ OTRS::OPM::Maker - Module/App to build and test OTRS packages
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 DESCRIPTION
 
@@ -44,14 +48,6 @@ List all CPAN- and OTRS- dependencies of your package
 
 Create the OPM file
 
-=item * devlink
-
-When you develop the package you might not want to build new version of your package and install it via the package manager. This command creates symlinks for each file of your package.
-
-=item * devunlink
-
-Remove the symlinks created with C<devlink>.
-
 =item * index
 
 build an index file for an OPM repository.
@@ -72,16 +68,6 @@ Check if the C<DatabaseInstall> and C<DatabaseUninstall> sections in your .sopm 
 
 =back
 
-Ideas:
-
-=over 4
-
-=item * devdb
-
-Do the DB changes needed for your package
-
-=back
-
 =head1 AUTHOR
 
 Renee Baecker <module@renee-baecker.de>
@@ -95,4 +81,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

@@ -15,6 +15,8 @@ use XML::LibXML::PrettyPrint;
 
 use OTRS::OPM::Maker -command;
 
+our $VERSION = 0.07;
+
 sub abstract {
     return "build index for an OPM repository";
 }
@@ -118,6 +120,7 @@ sub execute {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -126,7 +129,7 @@ OTRS::OPM::Maker::Command::index - Build index for an OPM repository
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 AUTHOR
 
@@ -141,4 +144,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
